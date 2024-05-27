@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Neighborhood page  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoCities Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- added the CSS code in this code to make life simple -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .main-background {
+            background-image: url('/static/world-map.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 100px 0;
+        }
+
+        .neighborhood {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            height: 100%;
+            margin-right: 15px; /* Adjust spacing between neighborhoods */
+            margin-left: 15px; /* Adjust spacing between neighborhoods */
+            position: relative;
+        }
+
+        .neighborhood:hover {
+            transform: translateY(-5px);
+        }
+
+        .neighborhood h2,
+        .neighborhood p {
+            color: #fff;
+        }
+
+        .neighborhood .btn {
+            margin-top: 10px;
+        }
+        .neighborhood p {
+            margin-bottom: 20px;
+        }
+
+
+          .row {
+            margin-bottom: 20px;
+        }
+
+        /* Neighborhood backgrounds */
+        .las-vegas-background {
+            background-image: url('/static/LasVegas.png'); /* Replace with your image URL */
+        }
+
+        .hollywood-background {
+            background-image: url('/static/Hollywood.png'); /* Replace with your image URL */
+        }
+
+        .paris-background {
+            background-image: url('/static/Paris.jpg'); /* Replace with your image URL */
+        }
+
+        .harvard-background {
+            background-image: url('/static/motorcity.PNG'); /* Replace with your image URL */
+        }
+
+        .geo-market-background {
+            background-image: url('/static/Market.jpg'); /* Replace with your image URL */
+        }
+
+        .old-geocities-background {
+            background-image: url('/static/Geo.jpg'); /* Replace with your image URL */
+        }
+    </style>
+</head>
+
+<!-- HTML code for the landing page -->
+<body>
+    <header>
+        <div class="container">
+            <h1 class="display-4">Welcome to GeoCities</h1>
+            <p class="lead">Explore our vibrant neighborhoods</p>
+        </div>
+    </header>
+
+    <div class="main-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="neighborhood las-vegas-background">
+                        <h2 class="display-5">Las Vegas</h2>
+                        <p class="lead">Neighborhood associated with entertainment and nightlife.</p>
+                        <a href="https://geocities.restorativland.org/Colosseum/Park/" class="btn btn-primary">Explore Las Vegas</a>
+                        <a href="/create-website" class="btn btn-success">Create/Add Website</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="neighborhood hollywood-background">
+                        <h2 class="display-5">Hollywood</h2>
+                        <p class="lead">Neighborhood dedicated to movies, TV shows, and celebrities.</p>
+                        <a href="https://geocities.restorativland.org/Hollywood/" class="btn btn-primary">Explore Hollywood</a>
+                        <a href="/create-website" class="btn btn-success">Create/Add Website</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="neighborhood paris-background">
+                        <h2 class="display-5">Paris</h2>
+                        <p class="lead">Neighborhood for art, literature, and romance.</p>
+                        <a href="https://geocities.restorativland.org/Paris/" class="btn btn-primary">Explore Paris</a>
+                        <a href="/create-website" class="btn btn-success">Create/Add Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="neighborhood harvard-background">
+                        <h2 class="display-5">MotorCity</h2>
+                        <p class="lead">Neighborhood for Cars, trucks, motorcycles.</p>
+                        <a href="https://geocities.restorativland.org/MotorCity/" class="btn btn-primary">Explore Harvard</a>
+                        <a href="/create-website" class="btn btn-success">Create/Add Website</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="neighborhood geo-market-background">
+                        <h2 class="display-5">GeoMarket</h2>
+                        <p class="lead">Neighborhood for buying and selling products.</p>
+                        <a href="https://geocities.restorativland.org/MotorCity/Shop/" class="btn btn-primary">Explore GeoMarket</a>
+                        <a href="/create-website" class="btn btn-success">Create/Add Website</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="neighborhood old-geocities-background">
+                        <h2 class="display-5">Old GeoCities</h2>
+                        <p class="lead">Revisit the nostalgia of the old GeoCities.</p>
+                        <a href="https://geocities.restorativland.org/" class="btn btn-primary">Explore Old GeoCities</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5
+
+{% endblock %}

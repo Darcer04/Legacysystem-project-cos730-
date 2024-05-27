@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Landing page for my system -->
+
+   <main class="container">
+       <h1>Welcome to the New and improved GeoCities</h1>
+      <div class="inner-container">
+        <h2>Get Started</h2>
+        <p>If you are new to GeoCities, please register to create an account. If you are already registered, you can sign in.</p>
+        <div class="button-container">
+            <form action="{{ url_for('register') }}" method="get" style="display:inline;">
+                <button type="submit" class="btn btn-success">Register</button>
+            </form>
+            <form action="{{ url_for('login') }}" method="get" style="display:inline;">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+        <div class="inner-container">
+                <h2>About GeoCities</h2>
+                <p>GeoCities was a web hosting service founded in 1994, which allowed users to create and publish their own websites. It was one of the earliest services that provided easy-to-use website creation tools, making it accessible for people with little to no coding experience to build their own personal or professional web pages.</p>
+            </div>
+            <div class="inner-container">
+                <h2>Historical Significance</h2>
+                <p>In the late 1990s and early 2000s, GeoCities was incredibly popular, hosting millions of websites. It played a crucial role in the democratization of the web, offering a platform for self-expression and community building. At its peak, GeoCities was the third most visited website on the internet.</p>
+            </div>
+
+
+    </main>
+{% endblock %}
